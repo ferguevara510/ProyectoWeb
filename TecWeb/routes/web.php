@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/registrarUsuario',[UsuarioController::class, 'vistaRegistrarUsuario'])->name('usuarioIndex');
 Route::post('/registrarUsuario', [UsuarioController::class, 'registrarUsuario'])->name('usuarioStorage');
-Route::get('/listarUsuarios', [UsuarioController::class, 'obtenerUsuarios'])->name('UsuarioList');
+Route::get('/', [UsuarioController::class, 'obtenerUsuarios'])->name('UsuarioList');

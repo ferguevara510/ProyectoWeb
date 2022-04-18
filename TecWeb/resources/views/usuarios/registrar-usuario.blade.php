@@ -5,6 +5,7 @@
         <p>{{ $message }}</p>
     </div>
 @endif
+
 <div class="container-registro mt-5">
 
     <form method="post" action="{{route('usuarioStorage')}}">

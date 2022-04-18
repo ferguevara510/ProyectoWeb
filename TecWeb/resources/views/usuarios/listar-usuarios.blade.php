@@ -1,6 +1,20 @@
+<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('/css/tarjetas.css') }}" rel="stylesheet">
+@if ($message = Session::get('success'))
+    <div class="alert alert-success">
+        <p>{{ $message }}</p>
+    </div>
+@endif
 <div class="titulo-lista">
-    <h1>Lista de usuarios</h1>
+    <div>
+        <a href="{{route('usuarioIndex')}}">
+            <button class="btn-primary">Registrar Usuario</button>
+        </a>
+    </div>
+    <div><h1>Lista de Usuarios</h1>
+    </div>
+    <div></div>
+
 </div>
 <div class="contenedor-tarjetas">
     @foreach ($usuarios as $usuario)

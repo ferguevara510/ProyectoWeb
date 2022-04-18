@@ -25,7 +25,7 @@ class UsuarioController extends Controller
             'codigoPostal' => '',
         ]);
         Usuario::create($nuevoCliente);
-        return back()->with('success', 'Usuario creado');
+        return redirect()->route('UsuarioList')->with('success', 'Usuario creado');
     }
 
     public function obtenerUsuarios(Request $request){

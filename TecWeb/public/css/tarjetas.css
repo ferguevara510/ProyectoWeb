@@ -38,3 +38,27 @@
     margin-bottom: 10px;
     font-size: 17px;
 }
+
+.titulo-lista{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.titulo-lista > div:nth-child(1){
+    width: 20%;
+    text-align: right;
+}
+
+.titulo-lista > div:nth-child(2){
+    width: 60%;
+    text-align: center;
+}
+
+.titulo-lista > div:nth-child(3){
+    width: 20%;
+}
+
+.titulo-lista button{
+    border-radius: 5px;
+}
