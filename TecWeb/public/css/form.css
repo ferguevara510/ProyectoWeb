@@ -1,0 +1,45 @@
+.form-registro{
+    margin-bottom: 15px;
+}
+
+.form-registro select,
+.form-registro input{
+    border: 2px solid #1FE8DC;
+    border-radius: 20px;
+    min-width: 555px;
+    min-height: 35px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 25px;
+}
+
+.btn-submit{
+    background-color: #1F3BE8;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+    width: auto;
+    height: auto;
+}
+
+.div-btn-submit{
+    justify-content: right;
+    display: flex;
+    width: 90%;
+    margin-top: 25px;
+}
+
+.container-registro{
+    width: 50%;
+    margin: auto;
+}
+
+.imagen-catalogo {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.contenedor-imagen{
+    text-align: center;
+}

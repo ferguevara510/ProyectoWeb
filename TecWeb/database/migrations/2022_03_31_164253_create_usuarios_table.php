@@ -16,6 +16,16 @@ return new class extends Migration
         Schema::create('usuarios', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('matricula');
+            $table->string('nombre');
+            $table->string('apellidoPaterno');
+            $table->string('apellidoMaterno');
+            $table->date('fechaNacimiento');
+            $table->string('correo');
+            $table->string('celular');
+            $table->string('calle');
+            $table->string('colonia');
+            $table->string('codigoPostal');
         });
     }
 
